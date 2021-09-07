@@ -1,1 +1,2 @@
-console.log('Ulalal');
+const randomColor = require('randomcolor');
+console.log(randomColor());
