@@ -1,1 +1,1 @@
-console.log('Ulalala');
+console.log('Ulalal');
