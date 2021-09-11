@@ -5,7 +5,10 @@ const color = randomColor({
 });
 const chalk = require('chalk');
 
-console.log(chalk.hex(color)`
+if (process.argv[2] === 'ask') {
+  console.log('Please type the name of the color and the luminosity:');
+} else {
+  console.log(chalk.hex(color)`
 #########################
 #########################
 #########################
@@ -15,3 +18,4 @@ console.log(chalk.hex(color)`
 #########################
 #########################
 #########################`);
+}
